@@ -1,0 +1,181 @@
+/*Utilities*/
+:root {
+    --dark-green: #354A1B;
+    --primary-green: #4D6F1C;
+    --brown: #3B2819;
+    --dark-blue: #331F98;
+    --primary-blue: #6187FD;
+    --grey-blue: #A4C6DD;
+    --light-blue: #CBD7FD;
+  }
+
+*{
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+
+/*Text and paragraph styling*/
+h1,h2,h3,h4,h5,h6, .navbar-brand span, .nav-link{
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: var(--primary-green);
+}
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 26px;
+}
+h4{
+    font-size: 20px;
+}
+h5{
+    font-size: 18px;
+}
+h6{
+    font-size: 15px;
+}
+p{
+    color: black;
+}
+
+/* Navbar and Footer Styling */
+.navContainer{
+    margin-inline: 22.5px;
+    padding-inline: 11px;
+}
+.navbar-brand span{
+    font-size: 40px;
+    color: var(--dark-green);
+}
+.nav-link{
+    font-size: 24px;
+}
+.nav-link:hover{
+    font-size: 24px;
+    color: var(--dark-green);
+}
+
+.footerText{
+    border-top: 2px solid var(--brown);
+}
+.footerText p{
+    color: var(--brown);
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+  
+.dropdown-submenu a::after {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: .1rem;
+    margin-right: .1rem;
+}
+
+/* Navbar Burger Menu Styling */
+/* Adapted from https://github.com/haydn5/animated-navigation-safari-fix/tree/main*/
+
+.navbar-toggler {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    position: relative;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: var(--dark-green);
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+    position: absolute;
+    top: 0px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    position: absolute;
+    top: 20px;
+    transform: rotate(0deg);
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar {
+    top: inherit;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    top: inherit;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    top: inherit;
+    transform: rotate(-135deg);
+}
+
+/* Color of 3 lines */
+
+.navbar-toggler.collapsed .toggler-icon {
+    background: linear-gradient( 263deg, var(--dark-green) 0%, var(--brown)) 100%;
+}
+
+
+
+/*Tile repeating block background for textbox section like end of game dirt and grey text*/
