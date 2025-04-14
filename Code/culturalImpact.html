@@ -1,0 +1,479 @@
+<!--
+H1 Cultural impact 
+H2 ------Applications
+H3------------Education
+H2 ------Clones
+H3------Minecon (Minecraft Live)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Import Bootstrap CSS 5.3.5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <!-- Import jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- Import Old Bootstrap JS compatible with nested navbar js 4.6.0, newer version imported at bottom of body-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Import Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+     
+    <!-- Import Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+
+    <!-- Import navbar javascript -->
+    <script src="js/navbar.js"></script>
+
+    <!-- Import Global Stylesheet -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/culturalImpact.css">
+
+
+    <title>Minecraft Case Study</title>
+</head>
+
+<body>
+    <header>
+        <a id="BackToTop" href="#"></a>
+        <nav class="sticky-top navbar navbar-light bg-white" style="border-bottom: 3px solid var(--brown); margin-top: 5px; width: 100%;">
+            <div class="container-fluid navContainer">
+                <!-- Logo & Title -->
+                <a class="navbar-brand d-flex justify-content-center align-items-center text-primary" href="#">
+                    <span class="ms-2 mb-0 ">Minecraft</span>
+                </a>
+    
+                <!-- Navbar Toggler (Burger Menu) -->
+                <button class="navbar-toggler collapsed d-flex flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation menu">
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+
+    
+                <!-- Collapsible Menu -->
+                <!-- Nested Menus adapted from https://stackblitz.com/edit/bootstrap-navbar-submenu -->
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto fs-4 justify-content-center align-items-center">
+                        
+                        <li class="nav-item">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="gameplayDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Gameplay
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="gameplayDropdownMenuLink">
+
+                                        <li><a class="dropdown-item" href="gameplay.html">Gameplay</a></li>
+        
+                                        <li class="dropdown-submenu">
+                                            <a id="dimensionsDropdownMenuLink" class="dropdown-item dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                              aria-haspopup="true" aria-expanded="false">Dimensions</a>
+                                            <ul class="dropdown-menu" aria-labelledby="dimensionsDropdownMenuLink">
+                                                <li><a class="dropdown-item" href="gameplay.html#dimensions">Dimensions</a></li>
+                                                <li><a class="dropdown-item" href="gameplay.html#theNether">The Nether</a></li>
+                                                <li><a class="dropdown-item" href="gameplay.html#theEnd">The End</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown-submenu">
+                                            <a id="gamemodesDropdownMenuLink" class="dropdown-item dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                              aria-haspopup="true" aria-expanded="false">Gamemodes</a>
+                                            <ul class="dropdown-menu" aria-labelledby="gamemodesDropdownMenuLink">
+                                                <li><a class="dropdown-item dropdown" href="gameplay.html#gamemodes">Gamemodes</a></li>
+                                                <li><a class="dropdown-item" href="gameplay.html#survival">Survival</a></li>
+                                                <li><a class="dropdown-item" href="gameplay.html#creative">Creative</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a class="dropdown-item" href="gameplay.html#multiplayer">Multiplayer</a></li>
+                                        <li><a class="dropdown-item" href="gameplay.html#minecraftRealms">Minecraft Realms</a></li>
+                                        <li><a class="dropdown-item" href="gameplay.html#modification">Modification</a></li>
+                                    
+                                    </li>
+                                </ul>
+                            </li>
+                        </li>
+
+                        <li class="nav-item">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="developementDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Development
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="developementDropdownMenuLink">
+
+                                        <li><a class="dropdown-item" href="developement.html">Developement</a></li>
+        
+                                        <li class="dropdown-submenu">
+                                            <a id="editionsDropdownMenuLink" class="dropdown-item dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                              aria-haspopup="true" aria-expanded="false">Editions</a>
+                                            <ul class="dropdown-menu" aria-labelledby="editionsDropdownMenuLink">
+                                                <li><a class="dropdown-item" href="developement.html#editions">Editions</a></li>
+                                                <li><a class="dropdown-item" href="developement.html#javaEdition">Java Edition</a></li>
+                                                <li><a class="dropdown-item" href="developement.html#pocketEdition">Pocket Edition</a></li>
+                                                <li><a class="dropdown-item" href="developement.html#bedrockAndConsole">Bedrock Edition And Console Editions</a></li>
+                                                <li><a class="dropdown-item" href="developement.html#otherVersions">Other Versions</a></li>
+                                                <li><a class="dropdown-item" href="developement.html#minecraftEducation">Minecraft Education</a></li>
+                                                <li><a class="dropdown-item" href="developement.html#chinaEdition">China Edition</a></li>
+                                                <li><a class="dropdown-item" href="developement.html#minecraftForWindows">Minecraft For Windows</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown-submenu">
+                                            <a id="variantsDropdownMenuLink" class="dropdown-item dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                              aria-haspopup="true" aria-expanded="false">Variants</a>
+                                            <ul class="dropdown-menu" aria-labelledby="variantsDropdownMenuLink">
+                                                <li><a class="dropdown-item " href="developement.html#variants">Variants</a></li>
+                                                <li><a class="dropdown-item" href="gameplay.html#virtualReality">Virtual Reality</a></li>
+                                            </ul>
+                                        </li>                                    
+                                    </li>
+                                </ul>
+                            </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="musicAndSoundDesign.html">Music And Sound Design</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="receptionDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Reception
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="receptionDropdownMenuLink">
+
+                                        <li><a class="dropdown-item" href="reception.html#reception">Reception</a></li>
+                                        <li><a class="dropdown-item" href="reception.html#critics">Critics</a></li>
+                                        <li><a class="dropdown-item" href="reception.html#sales">Sales</a></li>
+                                        <li><a class="dropdown-item" href="reception.html#awards">Awards</a></li>
+        
+                                        <li class="dropdown-submenu">
+                                            <a id="controversiesDropdownMenuLink" class="dropdown-item dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                              aria-haspopup="true" aria-expanded="false">Controversies</a>
+                                            <ul class="dropdown-menu" aria-labelledby="controversiesDropdownMenuLink">
+                                                <li><a class="dropdown-item" href="reception.html#controversies">Controversies</a></li>
+                                                <li><a class="dropdown-item" href="reception.html#2014EULAChanges">2014 EULA changes</a></li>
+                                                <li><a class="dropdown-item" href="reception.html#accountMigration">Account migration</a></li>
+                                                <li><a class="dropdown-item" href="reception.html#javaEditionChatReporting">Java Edition chat reporting</a></li>
+                                                <li><a class="dropdown-item" href="reception.html#mobVote">Mob Vote</a></li>
+                                            </ul>
+                                        </li>
+                               
+                                    </li>
+                                </ul>
+                            </li>
+                        </li>
+
+                        <li class="nav-item">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="culturalImpactDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Cultural Impact
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="culturalImpactDropdownMenuLink"> 
+                                    
+                                    <li><a class="dropdown-item" href="culturalImpact.html">Cultural Impact</a></li>
+
+                                    <li class="dropdown-submenu goLeft">
+                                        <a id="applicationsDropdownMenuLink" class="dropdown-item dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">Applications</a>
+                                        <ul class="dropdown-menu" aria-labelledby="applicationsDropdownMenuLink">
+                                            <li><a class="dropdown-item" href="culturalImpact.html#applications">Applications</a></li>
+                                            <li><a class="dropdown-item" href="culturalImpact.html#education">Education</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="culturalImpact.html#clones">Clones</a></li>
+                                    <li><a class="dropdown-item" href="culturalImpact.html#minecon">Minecon (Minecraft Live)</a></li>                               
+                                    </li>
+                                </ul>
+                            </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div id="culturalImpact" class="text-image-container">
+                <h1>Cultural Impact</h1>
+                <div class="row">
+                    <div class="text-image-container-text col-12 col-md-8 align-self-center order-md-1 order-5">
+                        <h3>
+                            Publicity and Achievement's
+                        </h3>
+                        <p>
+                            In September 2019, The Guardian classified Minecraft as the best video game of the 21st century to date,[342] and in November 2019 Polygon called the game the 
+                            <div class="quote">
+                                "most important game of the decade" in its 2010s "decade in review".[343]
+                            </div> 
+                                In December 2019, Forbes gave Minecraft a special mention in a list of the best video games of the 2010s, stating that the game is 
+                            <div class="quote">
+                                "without a doubt one of the most important games of the last ten years."[344]
+                            </div>
+
+                            In June 2020, Minecraft was inducted into the World Video Game Hall of Fame.[345]  
+                        </p>
+    
+                    </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center align-self-center order-1 order-md-5">
+                        <img src="images/trophy.jpeg" class="animate__animated animate__slideInRight animate__delay-1s" alt="Minecraft Trophy">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid basicTextSection">
+            <div class="row">
+                <h3>
+                    Pioneers of the early access business model
+                </h3>
+                <p>
+                    Minecraft is recognized as one of the first successful games to use an early access model to draw in sales prior to its full release version to help fund development.[267] As Minecraft helped to bolster indie game development in the early 2010s, it also helped to popularize the use of the early access model in indie game development.[346]
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="text-image-container">
+                <div class="row">
+                    <div class="text-image-container-text col-12 col-md-8 align-self-center order-5">
+                        <h3>
+                            Social Media and Minecraft
+                        </h3>
+                        <p>
+                            Social media sites such as YouTube, Facebook, and Reddit have played a significant role in popularizing Minecraft.[347] Research conducted by the University of Pennsylvania's Annenberg School of Communication showed that one-third of Minecraft players learned about the game via Internet videos.[348] In 2010, Minecraft-related videos began to gain influence on YouTube, often made by commentators. The videos usually contain screen-capture footage of the game and voice-overs.[349] Common coverage in the videos includes creations made by players, walkthroughs of various tasks, and parodies of works in popular culture. By May 2012, over four million Minecraft-related YouTube videos had been uploaded.[350] The game would go on to be a prominent fixture within YouTube's gaming scene during the entire 2010s; in 2014, it was the second-most searched term on the entire platform.[351] By 2018, it was still YouTube's biggest game globally.[352]
+                        </p>
+
+                    </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center align-self-center order-1">
+                        <div class="card animate__animated animate__slideInLeft animate__delay-2s" style="width: 18rem;">
+                            <img src="images/CaptainSparklez.jpg" class="card-img-top" alt="Youtuber known as Captain Sparklez">
+                            <div class="card-body">
+                                <p class="card-text text-muted">
+                                    Jordan Maron (known professionally as "CaptainSparklez") is known for his musical Minecraft parodies of popular songs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid basicTextSection mt-5">
+            <div class="row">
+                <p>
+                    Some popular commentators have received employment at Machinima, a now-defunct gaming video company that owned a highly watched entertainment channel on YouTube.[349] The Yogscast is a British company that regularly produces Minecraft videos; their YouTube channel has attained billions of views, and their panel at Minecon 2011 had the highest attendance.[349][353] Another well-known YouTube personality is Jordan Maron, known online as Captain Sparklez, who has also created many Minecraft music parodies, including "Revenge", a parody of Usher's "DJ Got Us Falling in Love". Minecraft's popularity on YouTube was described by Polygon as quietly dominant, although in 2019, thanks in part to PewDiePie's playthroughs of the game, Minecraft experienced a visible uptick in popularity on the platform.[351][354] YouTube later announced that on 14 December 2021 that the total amount of Minecraft-related views on the website have exceeded one trillion.[355]
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid basicTextSectionCentered">
+            <div class="row">
+                <h3>
+                    Minecraft and Other Games
+                </h3>
+                <p>
+                    Minecraft has been referenced by other video games, such as Torchlight II, Team Fortress 2,[356][357] Borderlands 2, Choplifter HD, Super Meat Boy, The Elder Scrolls V: Skyrim, The Binding of Isaac, The Stanley Parable, FTL: Faster Than Light,[358][359] and Super Smash Bros. Ultimate, the latter of which features a downloadable character and stage based on Minecraft.[360] It was also referenced by electronic music artist deadmau5 in his performances.[361] The game is also referenced heavily in "Informative Murder Porn", the second episode of the seventeenth season of the animated television series South Park.[362]
+                </p>
+            </div>
+        </div>
+
+        <div id="applications" class="container-fluid basicTextSection mt-5">
+            <h2>Applications</h2>
+            <h3>Minecraft and CAD</h3>
+            <div class="row">
+                <p>
+                    The possible applications of Minecraft have been discussed extensively, especially in the fields of computer-aided design (CAD) and education. In a panel at Minecon 2011, a Swedish developer discussed the possibility of using the game to redesign public buildings and parks, stating that rendering using Minecraft was much more user-friendly for the community, making it easier to envision the functionality of new buildings and parks.[349] In 2012, a member of the Human Dynamics group at the MIT Media Lab, Cody Sumter, said: 
+                    <div class="quote">
+                    "Notch hasn't just built a game. He's tricked 40 million people into learning to use a CAD program."
+
+                    </div>
+                    Various software has been developed to allow virtual designs to be printed using professional 3D printers or personal printers such as MakerBot and RepRap.[363]                
+                </p>
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="text-image-container">
+                <h3>The Block By Block Project</h3>
+                <div class="row">
+                    <div class="text-image-container-text col-12 col-md-8 align-self-center order-5 order-md-1">
+                        <p>
+                            In September 2012, Mojang began the Block by Block project in cooperation with UN Habitat to create real-world environments in Minecraft.[364][365] The project allows young people who live in those environments to participate in designing the changes they would like to see. Using Minecraft, the community has helped reconstruct the areas of concern, and citizens are invited to enter the Minecraft servers and modify their own neighborhood. Carl Manneh, Mojang's managing director, called the game 
+                            <div class="quote">
+                                "the perfect tool to facilitate this process", adding "The three-year partnership will support UN-Habitat's Sustainable Urban Development Network to upgrade 300 public spaces by 2016." 
+                            </div>
+                            Mojang signed Minecraft building community, FyreUK, to help render the environments into Minecraft. The first pilot project began in Kibera, one of Nairobi's informal settlements and is in the planning phase. The Block by Block project is based on an earlier initiative started in October 2011, Mina Kvarter (My Block), which gave young people in Swedish communities a tool to visualize how they wanted to change their part of town. According to Manneh, the project was a helpful way to visualize urban planning ideas without necessarily having a training in architecture. The ideas presented by the citizens were a template for political decisions.[366][367]
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center align-self-center order-1 order-md-5">
+                        <img class="animate__animated animate__slideInRight animate__delay-4s" src="images/minecraftModernHouse.png" alt="Modern Design Minecraft House">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="text-image-container">
+                <div class="row">
+                    <div class="text-image-container-text col-12 col-md-8 align-self-center order-5 ">
+                        <h3>Denmark in fullscale in Minecraft</h3>
+                        <p>
+                            In April 2014, the Danish Geodata Agency generated all of Denmark in fullscale in Minecraft based on their own geodata.[368] This is possible because Denmark is one of the flattest countries with the highest point at 171 meters (ranking as the country with the 30th smallest elevation span), where the limit in default Minecraft was around 192 meters above in-game sea level when the project was completed.[369][370]
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center align-self-center order-1">
+                        <div class="card animate__animated animate__slideInLeft animate__delay-5s denmark" style="width: 18rem;">
+                            <img src="images/denmarkRecreation.png" class="card-img-top" alt="Recreation of Christiansborg in Minecraft">
+                            <div class="card-body">
+                                <p class="card-text text-muted">
+                                    Recreation of Christiansborg
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid basicTextSectionCentered">
+            <div class="row">
+                <h3>
+                    The Uncensored Library
+                </h3>
+                <p>
+                    Taking advantage of the game's accessibility where other websites are censored, the non-governmental organization Reporters Without Borders has used an open Minecraft server to create the Uncensored Library, a repository within the game of journalism by authors from countries (including Egypt, Mexico, Russia, Saudi Arabia and Vietnam) who have been censored and arrested, such as Jamal Khashoggi.[371] The neoclassical virtual building was created over about 250 hours by an international team of 24 people.[372]
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid basicTextSectionCentered">
+            <div class="row">
+                <h3>
+                    Speedrunning
+                </h3>
+                <p>
+                    Despite its unpredictable nature, Minecraft speedrunning, where players time themselves from being dropped into a new world to reaching The End and defeating the Ender Dragon boss, is popular. Some speedrunners use a combination of mods, external programs, and debug menus, while other runners play the game in a more vanilla or more consistency-oriented way.[373][374]
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="education">
+            <div class="text-image-container">
+                <h2>Education</h2>
+                <div class="row">
+                    <div class="text-image-container-text col-12 col-md-8 align-self-center order-5 order-md-1">
+                        <p>
+                            Minecraft has also been used in educational settings.[9] In 2011, an educational organization named MinecraftEdu was formed with the goal of introducing Minecraft into schools. The group works with Mojang to make the game affordable and accessible to schools. The version of Minecraft through MinecraftEdu includes unique features to allow teachers to monitor the students' progress within the virtual world, such as receiving screenshots from students to show completion of a lesson.[375] In September 2012, MinecraftEdu said that approximately 250,000 students around the world have access to Minecraft through the company.[376] A wide variety of educational activities involving the game have been developed to teach students various subjects, including history, language arts and science. For an example, one teacher built a world consisting of various historical landmarks for students to learn and explore.[376] Another teacher created a large-scale representation of an animal cell within Minecraft that student could explore and learn how cell functions work.[375] Great Ormond Street Hospital has been recreated in Minecraft, and it proposed that patients can use it to virtually explore the hospital before they visit it in real life.[377] Minecraft may also prove as an innovation in computer-aided design.[378] Minecraft offers an outlet of collaboration in design and could have an impact on the industry.[379]
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center align-self-center order-1 order-md-5">
+                        <img class="animate__animated animate__slideInRight animate__delay-5s" src="images/minecraftInSchool.png" alt="Minecraft being played in an educational setting">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid basicTextSection mt-5">
+            <h3>Redstone</h3>
+            <div class="row">
+                <p>
+                    With the introduction of redstone blocks to represent electrical circuits, users have been able to build functional virtual computers within Minecraft.[380] Such virtual creations include a working hard drive,[381] an 8-bit virtual computer,[382] and even a smaller-scale version of Minecraft that is playable and able to be built completely in survival mode with no external modifications.[383] In at least one instance, a mod has been created to use this feature to teach younger players how to program within a language set by a virtual computer within a Minecraft world.[384]
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="text-image-container">
+                <div class="row">
+                    <div class="text-image-container-text col-12 col-md-8 align-self-center order-5 ">
+                        <h3>The Introduction of Command Blocks</h3>
+                        <p>
+                            Another computational mechanic in Minecraft is the command block, a block that is only accessible in creative mode and can alter game logic. Examples of creations made using command blocks include an emulator for the Atari 2600[385][386] and a reimplementation of Pokémon Red Version.[387]                        </p>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center align-self-center order-1">
+                        <div class="animate__animated animate__slideInLeft animate__delay-5s" style="width: 18rem;">
+                            <img src="images/commandBlock.jpeg" class="card-img-top" alt="Minecraft Command Block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid basicTextSectionCentered">
+            <div class="row">
+                <h3>
+                    Minecraft and Code.org
+                </h3>
+                <p>
+                    In September 2014, the British Museum in London announced plans to recreate its building along with all exhibits in Minecraft in conjunction with members of the public.[388] Microsoft and the non-profit organisation Code.org had teamed up to offer Minecraft-based games, puzzles, and tutorials aimed to help teach children how to program; by March 2018, Microsoft and Code.org reported that more than 85 million children have used their tutorials.[389]                </p>
+            </div>
+        </div>
+
+        <div id="clones" class="container-fluid basicTextSection mt-5">
+            <h2>Clones</h2>
+            <div class="row">
+                <p>
+                    Following the initial surge in popularity of Minecraft in 2010, other video games were criticised for having various similarities to Minecraft, and some were described as being "clones", often due to a direct inspiration from Minecraft, or a superficial similarity. Examples include Ace of Spades, CastleMiner, CraftWorld, FortressCraft, Terraria, BlockWorld 3D, Total Miner,[390] and Luanti (formerly Minetest).[391] David Frampton, designer of The Blockheads, reported that one failure of his 2D game was the "low resolution pixel art" that too closely resembled the art in Minecraft, which resulted in "some resistance" from fans.[392] A homebrew adaptation of the alpha version of Minecraft for the Nintendo DS, titled DScraft, has been released; it has been noted for its similarity to the original game considering the technical limitations of the system.[393] In response to Microsoft's acquisition of Mojang and their Minecraft IP, various developers announced further clone titles developed specifically for Nintendo's consoles, as they were the only major platforms not to officially receive Minecraft at the time.[394] These clone titles include UCraft (Nexis Games),[395] Cube Life: Island Survival (Cypronia),[396] Discovery (Noowanda),[397] Battleminer (Wobbly Tooth Games),[398] Cube Creator 3D (Big John Games),[399] and Stone Shire (Finger Gun Games).[400] Despite this, the fears of fans were unfounded, with official Minecraft releases on Nintendo consoles eventually resuming.[401][402][403]
+                </p>
+            </div>
+        </div>
+        <div class="container-fluid basicTextSection mt-5">
+            <h3>Minicraft</h3>
+            <div class="row">
+                <p>
+                    Markus Persson made another similar game, Minicraft, for a Ludum Dare competition in 2011.[404] In 2025, Persson announced through a poll on his X account that he was considering developing a spiritual successor to Minecraft. He later clarified that he was "100% serious", and that he had "basically announced Minecraft 2".[405][406][407]                </p>
+            </div>
+        </div>
+        <div class="container-fluid basicTextSection mt-5">
+            <h3>Oasis</h3>
+            <div class="row">
+                <p>
+                    In November 2024, artificial intelligence companies Decart and Etched released Oasis, an artificially generated version of Minecraft, as a proof of concept. Every in-game element is completely AI generated in real time and the model does not store world data, leading to "hallucinations" such as items and blocks appearing that were not there before.[408]
+                </p>
+            </div>
+        </div>
+
+        <div id="minecon" class="container-fluid basicTextSectionCentered">
+            <div class="row">
+                <h2>
+                    Minecon (Minecraft Live)
+                </h2>
+                <p>
+                    Minecon, now known as Minecraft Live, is an annual official fan convention dedicated to Minecraft which usually reveals new games or feature drops, among others. The first full Minecon was held in November 2011 at the Mandalay Bay Hotel and Casino in Las Vegas.[409] The event included the official launch of Minecraft; keynote speeches, including one by Persson; building and costume contests; Minecraft-themed breakout classes; exhibits by leading gaming and Minecraft-related companies; commemorative merchandise; and autograph and picture times with Mojang employees and well-known contributors from the Minecraft community.[410] In 2016, Minecon was held in-person for the last time, with the following years featuring annual livestreams on minecraft.net and YouTube instead.
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div id="backToTopButton" class="text-center mt-4 ">
+                <button type="button" class="btn btn-success btn-custom btn-lg mb-3" onclick="location.href='#';">Back To Top</button>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row text-center justify-content-center align-items-center footerText">
+                <p>@ <script>document.write(new Date().getFullYear())</script> Web Dev Minecraft Case Study - All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Import Bootstrap JS 5.3.5-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
