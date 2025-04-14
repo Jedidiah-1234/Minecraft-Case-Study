@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Import Bootstrap CSS 5.3.5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <!-- Import jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- Import Old Bootstrap JS compatible with nested navbar js 4.6.0, newer version imported at bottom of body-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+
+    <!-- Import Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+     
+
+    <!-- Import Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+
+    <!-- Import navbar javascript -->
+    <script src="js/navbar.js"></script>
+
+    <!-- Import Global Stylesheet -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/musicAndSoundDesign.css">
+
+    <title>Minecraft Case Study</title>
+</head>
+
+<body>
+    <header>
+        <a id="BackToTop" href="#"></a>
+        <nav class="sticky-top navbar navbar-light bg-white" style="border-bottom: 3px solid var(--brown); margin-top: 5px; width: 100%;">
+            <div class="container-fluid navContainer">
+                <!-- Logo & Title -->
+                <a class="navbar-brand d-flex justify-content-center align-items-center text-primary" href="#">
+                    <span class="ms-2 mb-0 ">Minecraft</span>
+                </a>
+    
+                <!-- Navbar Toggler (Burger Menu) -->
+                <button class="navbar-toggler collapsed d-flex flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation menu">
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+
+    
+                <!-- Collapsible Menu -->
+                <!-- Nested Menus adapted from https://stackblitz.com/edit/bootstrap-navbar-submenu -->
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto fs-4 justify-content-center align-items-center">
+                        
+                        <li class="nav-item">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="gameplayDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Gameplay
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="gameplayDropdownMenuLink">
+
+                                        <li><a class="dropdown-item" href="gameplay.html">Gameplay</a></li>
+        
+                                        <li class="dropdown-submenu">
+                                            <a id="dimensionsDropdownMenuLink" class="dropdown-item dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                              aria-haspopup="true" aria-expanded="false">Dimensions</a>
+                                            <ul class="dropdown-menu" aria-labelledby="dimensionsDropdownMenuLink">
+                                                <li><a class="dropdown-item" href="gameplay.html#dimensions">Dimensions</a></li>
+                                                <li><a class="dropdown-item" href="gameplay.html#theNether">The Nether</a></li>
+                                                <li><a class="dropdown-item" href="gameplay.html#theEnd">The End</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown-submenu">
+                                            <a id="gamemodesDropdownMenuLink" class="dropdown-item dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                              aria-haspopup="true" aria-expanded="false">Gamemodes</a>
+                                            <ul class="dropdown-menu" aria-labelledby="gamemodesDropdownMenuLink">
+                                                <li><a class="dropdown-item dropdown" href="gameplay.html#gamemodes">Gamemodes</a></li>
+                                                <li><a class="dropdown-item" href="gameplay.html#survival">Survival</a></li>
+                                                <li><a class="dropdown-item" href="gameplay.html#creative">Creative</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a class="dropdown-item" href="gameplay.html#multiplayer">Multiplayer</a></li>
+                                        <li><a class="dropdown-item" href="gameplay.html#minecraftRealms">Minecraft Realms</a></li>
+                                        <li><a class="dropdown-item" href="gameplay.html#modification">Modification</a></li>
+                                    
+                                    </li>
+                                </ul>
+                            </li>
+                        </li>
+
+                        <li class="nav-item">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="developementDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Development
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="developementDropdownMenuLink">
+
+                                        <li><a class="dropdown-item" href="developement.html">Developement</a></li>
+        
+                                        <li class="dropdown-submenu">
+                                            <a id="editionsDropdownMenuLink" class="dropdown-item dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                              aria-haspopup="true" aria-expanded="false">Editions</a>
+                                            <ul class="dropdown-menu" aria-labelledby="editionsDropdownMenuLink">
+                                                <li><a class="dropdown-item" href="developement.html#editions">Editions</a></li>
+                                                <li><a class="dropdown-item" href="developement.html#javaEdition">Java Edition</a></li>
+                                                <li><a class="dropdown-item" href="developement.html#pocketEdition">Pocket Edition</a></li>
+                                                <li><a class="dropdown-item" href="developement.html#bedrockAndConsole">Bedrock Edition And Console Editions</a></li>
+                                                <li><a class="dropdown-item" href="developement.html#otherVersions">Other Versions</a></li>
+                                                <li><a class="dropdown-item" href="developement.html#minecraftEducation">Minecraft Education</a></li>
+                                                <li><a class="dropdown-item" href="developement.html#chinaEdition">China Edition</a></li>
+                                                <li><a class="dropdown-item" href="developement.html#minecraftForWindows">Minecraft For Windows</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown-submenu">
+                                            <a id="variantsDropdownMenuLink" class="dropdown-item dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                              aria-haspopup="true" aria-expanded="false">Variants</a>
+                                            <ul class="dropdown-menu" aria-labelledby="variantsDropdownMenuLink">
+                                                <li><a class="dropdown-item " href="developement.html#variants">Variants</a></li>
+                                                <li><a class="dropdown-item" href="gameplay.html#virtualReality">Virtual Reality</a></li>
+                                            </ul>
+                                        </li>                                    
+                                    </li>
+                                </ul>
+                            </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="musicAndSoundDesign.html">Music And Sound Design</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="receptionDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Reception
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="receptionDropdownMenuLink">
+
+                                        <li><a class="dropdown-item" href="reception.html#reception">Reception</a></li>
+                                        <li><a class="dropdown-item" href="reception.html#critics">Critics</a></li>
+                                        <li><a class="dropdown-item" href="reception.html#sales">Sales</a></li>
+                                        <li><a class="dropdown-item" href="reception.html#awards">Awards</a></li>
+        
+                                        <li class="dropdown-submenu">
+                                            <a id="controversiesDropdownMenuLink" class="dropdown-item dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                              aria-haspopup="true" aria-expanded="false">Controversies</a>
+                                            <ul class="dropdown-menu" aria-labelledby="controversiesDropdownMenuLink">
+                                                <li><a class="dropdown-item" href="reception.html#controversies">Controversies</a></li>
+                                                <li><a class="dropdown-item" href="reception.html#2014EULAChanges">2014 EULA changes</a></li>
+                                                <li><a class="dropdown-item" href="reception.html#accountMigration">Account migration</a></li>
+                                                <li><a class="dropdown-item" href="reception.html#javaEditionChatReporting">Java Edition chat reporting</a></li>
+                                                <li><a class="dropdown-item" href="reception.html#mobVote">Mob Vote</a></li>
+                                            </ul>
+                                        </li>
+                               
+                                    </li>
+                                </ul>
+                            </li>
+                        </li>
+
+                        <li class="nav-item">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="culturalImpactDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Cultural Impact
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="culturalImpactDropdownMenuLink"> 
+                                    
+                                    <li><a class="dropdown-item" href="culturalImpact.html">Cultural Impact</a></li>
+
+                                    <li class="dropdown-submenu goLeft">
+                                        <a id="applicationsDropdownMenuLink" class="dropdown-item dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">Applications</a>
+                                        <ul class="dropdown-menu" aria-labelledby="applicationsDropdownMenuLink">
+                                            <li><a class="dropdown-item" href="culturalImpact.html#applications">Applications</a></li>
+                                            <li><a class="dropdown-item" href="culturalImpact.html#education">Education</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="culturalImpact.html#clones">Clones</a></li>
+                                    <li><a class="dropdown-item" href="culturalImpact.html#minecon">Minecon (Minecraft Live)</a></li>                               
+                                    </li>
+                                </ul>
+                            </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div id="musicAndSoundDesign" class="text-image-container">
+                <h1>Music And Sound Design</h1>
+                <div class="row">
+                    <div class="text-image-container-text col-12 col-md-6 align-self-center order-md-1 order-5">
+                        <h2>
+                            "C418" - Daniel Rosenfield
+                        </h2>
+                        <p class="text-muted">
+                            Minecraft music composer and sound designer
+                        </p>
+                        <p>
+                            Minecraft's music and sound effects were produced by German musician Daniel Rosenfeld, better known as C418.[200] To create the sound effects for the game, Rosenfeld made extensive use of foley techniques. On learning the processes for the game, he remarked, 
+                            <div class="quote">
+                            "Foley’s an interesting thing, and I had to learn its subtleties. Early on, I wasn’t that knowledgeable about it. It’s a whole trial-and-error process. You just make a sound and eventually you go, 'Oh my God, that’s it! Get the microphone!' There’s no set way of doing anything at all."[201][202]
+                            </div> 
+                            He reminisced on creating the in-game sound for grass blocks, stating                             
+                            <div class="quote">
+                                "It turns out that to make grass sounds you don’t actually walk on grass and record it, because grass sounds like nothing. What you want to do is get a VHS, break it apart, and just lightly touch the tape."
+                            </div> 
+                            According to Rosenfeld, his favorite sound to design for the game was the hisses of spiders. He elaborates,
+                            <div class="quote">
+                                "I like the spiders. Recording that was a whole day of me researching what a spider sounds like. Turns out, there are spiders that make little screeching sounds, so I think I got this recording of a fire hose, put it in a sampler, and just pitched it around until it sounded like a weird spider was talking to you."[201]
+                            </div> 
+                        </p>
+    
+                    </div>
+                    <div class="col-12 col-md-6 align-self-center order-md-5 order-1">
+                        <img src="images/Daniel_Rosenfeld.jpg" class="animate__animated animate__slideInRight animate__delay-1s" alt="Daniel Rosenfeld">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Minecraft Dirt Block Page Divider-->
+        <div class="container-fluid mx-0 mt-0 mb-2 -0 pt-2 pb-2 px-0 minecraftDirtBackground"></div>
+
+        <div class="container-fluid basicTextSection">
+                <div class="row">
+                    <h3>
+                        The proccess of creating game sounds
+                    </h3>
+                    <p>
+                        Many sounds for the game were created accidentally or spontaneously. On the creation for the sound for the creeper, Rosenfeld recalled, 
+                        <div class="quote">
+                            "That was just a complete accident by Markus and me [sic]. We just put in a placeholder sound of burning a matchstick. It seemed to work hilariously well, so we kept it."[203]
+                        </div>
+                        On other sounds, such as those of the zombie, Rosenfeld remarked, 
+                        <div class="quote">
+                            "I actually never wanted the zombies so scary. I intentionally made them sound comical. It’s nice to hear that they work so well [...]."[203]
+                        </div> 
+                        Rosenfeld remarked that the sound engine was "terrible" to work with, remembering 
+                        <div class="quote">
+                            "If you had two song files at once, it [the game engine] would actually crash. There were so many more weird glitches like that the guys never really fixed because they were too busy with the actual game and not the sound engine."[202]
+                        </div>
+                    </p>
+                </div>
+        </div>
+
+        <div class="container-fluid basicTextSection">
+            <div class="row">
+                <h3>
+                    Minecraft Soundtrack
+                </h3>
+                <p>
+                    The background music in Minecraft is instrumental ambient music.[204] To compose the music of Minecraft, Rosenfeld used the package from Ableton Live, along with several additional plug-ins. Speaking on them, Rosenfeld said 
+                    <div class="quote">
+                        "They can be pretty much everything from an effect to an entire orchestra. Additionally, I’ve got some synthesizers that are attached to the computer. Like a Moog Voyager, Dave Smith Prophet 08 and a Virus TI."[203]
+                    </div>
+                </p>
+                <div class="row py-3">
+                    <div class="col-12 col-md-6">
+                        <h4>
+                            Volume Alpha
+                        </h4> 
+                        <p">
+                            On 4 March 2011, Rosenfeld released a soundtrack titled Minecraft – Volume Alpha; it includes most of the tracks featured in Minecraft, as well as other music not featured in the game.[205] Kirk Hamilton of Kotaku chose the music in Minecraft as one of the best video game soundtracks of 2011.[206] On 9 November 2013, Rosenfeld released the second official soundtrack, titled Minecraft – Volume Beta, which includes the music that was added in later versions of the game.[203][207] A physical release of Volume Alpha, consisting of CDs, black vinyl, and limited-edition transparent green vinyl LPs, was issued by indie electronic label Ghostly International on 21 August 2015.[208][209] On 14 August 2020, Ghostly released Volume Beta on CD and vinyl, with alternate color LPs and lenticular cover pressings released in limited quantities.[210][211]                
+                        </p> 
+                    </div>
+                    <div class="col-12 col-md-6 mt-5 mt-md-0">
+                        <h4>
+                            Volume Beta
+                        </h4> 
+                        <p>
+                            On 9 November 2013, Rosenfeld released the second official soundtrack, titled Minecraft – Volume Beta, which includes the music that was added in later versions of the game.[203][207] A physical release of Volume Alpha, consisting of CDs, black vinyl, and limited-edition transparent green vinyl LPs, was issued by indie electronic label Ghostly International on 21 August 2015.[208][209] On 14 August 2020, Ghostly released Volume Beta on CD and vinyl, with alternate color LPs and lenticular cover pressings released in limited quantities.[210][211]                
+                        </p>  
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+
+        <!-- Minecraft Dirt Block Page Divider-->
+        <div class="container-fluid mx-0 mt-0 mb-2 -0 pt-2 pb-2 px-0 minecraftCobblestoneBackground"></div>
+
+        <div class="container-fluid basicTextSection">
+                <div class="row">
+                    <h3>
+                        Other Composers
+                    </h3>
+                    <p>
+                    The last update Rosenfeld worked on was Update Aquatic. His music remained the only music in the game until 2020's "The Nether Update", introducing pieces from Lena Raine. Since then, other composers have made contributions, including Kumi Tanioka, Samuel Åberg, and Aaron Cherof, with Raine remaining as the new primary composer. Ownership of all music besides Rosenfeld's independently released albums has been retained by Microsoft, with their label publishing all of the other artists' releases. Gareth Coker also composed some of the music for the game's mini games from the Legacy Console editions.[212][213][214][215]
+                    </p>
+                </div>
+        </div>
+
+        <div class="container-fluid basicTextSectionCentered">
+                <div class="row">
+                    <h3>
+                        Rosenfeld's Unreleased Album
+                    </h3>
+                    <p>
+                        Rosenfeld had stated his intent to create a third album of music for the game in a 2015 interview with Fact,[201] and confirmed its existence in a 2017 tweet, stating that his work on the record as of then had tallied up to be longer than the previous two albums combined, which in total clocks in at over 3 hours and 18 minutes.[216] However, due to licensing issues with Microsoft, the third volume has since not seen release. On 8 January 2021, Rosenfeld was asked in an interview with Anthony Fantano whether or not there was still a third volume of his music intended for release. Rosenfeld responded, saying, 
+                        <div class="quote">
+                            "I have something—I consider it finished—but things have become complicated, especially as Minecraft is now a big property, so I don't know."[217]
+                        </div>
+                    </p>
+                </div>
+        </div>
+
+        <div class="container-fluid">
+            <div id="backToTopButton" class="text-center mt-4 ">
+                <button type="button" class="btn btn-success btn-custom btn-lg mb-3" onclick="location.href='#';">Back To Top</button>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row text-center justify-content-center align-items-center footerText">
+                <p>@ <script>document.write(new Date().getFullYear())</script> Web Dev Minecraft Case Study - All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Import Bootstrap JS 5.3.5-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
