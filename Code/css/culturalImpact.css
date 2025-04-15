@@ -1,12 +1,6 @@
 .text-image-container img{
-    object-fit: contain;
-    margin: 5px;
-    padding: 0px;
     width: 100%;
-    border-radius: 8px;
-    align-self: center;
 }
-
 
 /*Styling for back to top button to match colour scheme, to be used with bootstrap class btn-success*/
 .btn-custom{

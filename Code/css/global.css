@@ -97,6 +97,7 @@ p{
     color: var(--brown);
 }
 
+/* Adapted from https://stackblitz.com/edit/bootstrap-navbar-submenu */
 .dropdown-submenu {
     position: relative;
 }
@@ -204,8 +205,6 @@ p{
 
 
 
-
-
 /*Left Text, Right Image Preset Styling*/
 .text-image-container{
     margin-top: 70px;
@@ -225,15 +224,12 @@ p{
 
 .text-image-container-text{
     padding-top:15px;
-    padding-left:20px;
-    padding-right: 120px;
     padding-bottom:15px;
     margin-bottom: 35px;
 }
 .text-image-container-text p{
     padding-bottom: 0px;
     margin-bottom: 0px;
-
 }
 .text-image-container-text h2{
     padding-bottom: 10px;
@@ -264,26 +260,20 @@ p{
 @media (max-width: 950px) {
 
     .text-image-container img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
         align-self: center;
         padding: 5px;
         width: 80%;
-        object-fit: contain;
-        
     }
     .text-image-container{
         margin-top: 40px;
+        text-align: center;
     }
     .text-image-container-text{
         padding-inline: 0px;
-        text-align: center;
     }
     .text-image-container .quote{
         color: var(--primary-green);
         padding-inline: 30px;
-        text-align: center;
     }
 }
 
