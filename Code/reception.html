@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Import Bootstrap CSS 5.3.5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <!-- Import jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- Import Old Bootstrap JS compatible with nested navbar js 4.6.0, newer version imported at bottom of body-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Import Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+
+    <!-- Import navbar javascript -->
+    <script src="js/navbar.js"></script>
+
+    <!-- Import Global Stylesheet -->
+    <link rel="stylesheet" href="css/global.css">
+
+    <title>Minecraft Reception</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a id="BackToTop" href="#"></a>
+        <nav class="sticky-top navbar navbar-light bg-white" style="border-bottom: 3px solid var(--brown); margin-top: 5px; width: 100%;">
+            <div class="container-fluid navContainer">
+                <!-- Logo & Title -->
+                <a class="navbar-brand d-flex justify-content-center align-items-center text-primary" href="#">
+                    <span class="ms-2 mb-0 ">Minecraft</span>
+                </a>
+    
+                <!-- Navbar Toggler (Burger Menu) -->
+                <button class="navbar-toggler collapsed d-flex flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation menu">
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+
+                <!-- Collapsible Menu -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto fs-4 justify-content-center align-items-center">
+                        <li class="nav-item">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="gameplayDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Reception
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="gameplayDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="reception.html">Reception</a></li>
+                                </ul>
+                            </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Reception Content -->
+    <section id="reception">
+        <div class="container mt-5">
+            <h1>Reception</h1>
+            <p>The reception of Minecraft has been overwhelmingly positive since its launch. It has become one of the best-selling video games of all time, with players worldwide praising its creative freedom, engaging gameplay, and community involvement.</p>
+
+            <h2>Critics' Reviews</h2>
+            <p>Many critics have praised the game for its sandbox-style mechanics, allowing players to build, explore, and survive in a procedurally generated world. Minecraft's simplicity is part of its charm, with players of all ages able to jump into the game and enjoy its wide range of possibilities.</p>
+
+            <h2>Commercial Success</h2>
+            <p>Since its official release, Minecraft has sold over 200 million copies across all platforms. Its commercial success is also reflected in the game's extensive merchandise, spin-offs, and adaptations.</p>
+
+            <h2>Fan Community</h2>
+            <p>Minecraft has built a massive fan community that continues to grow. With fan-created content, including custom mods, maps, and texture packs, the game has maintained its appeal over the years. The multiplayer aspect of Minecraft also allows players to connect, collaborate, and compete with others globally.</p>
+        </div>
+    </section>
+</body>
+
+</html>
