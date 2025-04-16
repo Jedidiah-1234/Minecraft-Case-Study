@@ -15,12 +15,6 @@
     background-size: 10em;
 }
 
-
-/*Styling for back to top button to match colour scheme, to be used with bootstrap class btn-success*/
-.btn-custom{
-    background-color: var(--primary-green);
-}
-
 /*Align Header in the middle of the screen on medium to small devices*/
 @media (max-width: 950px) {
     h1{

@@ -15,6 +15,9 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
     </script>
 
+    <!-- Import Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -34,7 +37,6 @@
 
 <body>
     <header>
-        <a id="BackToTop" href="#"></a>
         <nav class="sticky-top navbar navbar-light bg-white" style="border-bottom: 3px solid var(--brown); margin-top: 5px; width: 100%;">
             <div class="container-fluid navContainer">
                 <!-- Logo & Title -->
@@ -195,18 +197,116 @@
     </header>
 
     <main>
-        <div class="container-fluid text-center">
-            <h1>Heading 1</h1>
-            <p>Paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis iusto voluptas a cum esse rem, iure pariatur quisquam labore, est aspernatur veniam. Pariatur repellat eaque alias ratione illum! Molestias?</p>
-            <h2>Heading 2</h2>
-            <p>Paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis iusto voluptas a cum esse rem, iure pariatur quisquam labore, est aspernatur veniam. Pariatur repellat eaque alias ratione illum! Molestias?</p>
-            <h3>Heading 3</h3>
-            <p>Paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis iusto voluptas a cum esse rem, iure pariatur quisquam labore, est aspernatur veniam. Pariatur repellat eaque alias ratione illum! Molestias?</p>
-            <h4>Heading 4</h4>
-            <p>Paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis iusto voluptas a cum esse rem, iure pariatur quisquam labore, est aspernatur veniam. Pariatur repellat eaque alias ratione illum! Molestias?</p>
-            <h5>Heading 5</h5>
-            <p>Paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis iusto voluptas a cum esse rem, iure pariatur quisquam labore, est aspernatur veniam. Pariatur repellat eaque alias ratione illum! Molestias?</p>
-            <h6>Heading 6</h6>
+        <h1 class="mt-3 text-center">Home</h1>
+        <div class="container-fluid">
+            <div class="text-image-container">
+                <div class="row">
+                    <div class="text-image-container-text col-12 col-md-6 align-self-center order-md-1 order-5">
+                        <h2>
+                            Gameplay
+                        </h2>
+                        <p>
+                           Covering topics such as the dimensions within Minecraft, the overworld, the nether and the end, to the Gamemodes within minecraft - Survival and Creative. Multiplayer, minecraft realms and how poeple have modified the game this page covers it all!
+                        </p>
+                        <div class="mt-4">
+                            <button type="button" class="btn btn-success btn-custom btn-lg mb-3" onclick="location.href='gameplay.html';">Explore</button>
+                        </div>
+    
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-self-center order-1">
+                        <img src="images/nether.jpg" class="animate__animated animate__slideInRight animate__delay-1s" alt="Minecraft Nether Portal">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="text-image-container">
+                <div class="row">
+                    <div class="text-image-container-text col-12 col-md-6 align-self-center order-5">
+                        <h2>
+                            Development
+                        </h2>
+                        <p>
+                           Going over the many editions of the game - Java Edition, Pocket Edition, Bedrock & Console. Education, China Edition, Minecraft for Windows, and variants like Virtual Reality. Learn about Minecrafts development.
+                        </p>
+                        <div class="mt-4">
+                            <button type="button" class="btn btn-success btn-custom btn-lg mb-3" onclick="location.href='development.html';">Explore</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-self-center order-1">
+                        <img src="images/commandBlock.jpeg" class="animate__animated animate__slideInLeft animate__delay-2s" alt="Minecraft Command Block">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="text-image-container">
+                <div class="row">
+                    <div class="text-image-container-text col-12 col-md-6 align-self-center order-md-1 order-5">
+                        <h2>
+                            Music And Sound Design
+                        </h2>
+                        <p>
+                            Learn about how Daniel Rosenfield "C418", shaped the soundscape of Minecraft, how the game sounds came to be and other sound designers that came in down the line.
+                        </p>
+                        <div class="mt-4">
+                            <button type="button" class="btn btn-success btn-custom btn-lg mb-3" onclick="location.href='musicAndSoundDesign.html';">Explore</button>
+                        </div>
+    
+                    </div>
+                    <div class="col-12 col-md-6  d-flex justify-content-center align-self-center order-md-5 order-1">
+                        <img src="images/Daniel_Rosenfeld.jpg" class="animate__animated animate__slideInRight animate__delay-3s" alt="Daniel Rosenfeld">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="text-image-container">
+                <div class="row">
+                    <div class="text-image-container-text col-12 col-md-6 align-self-center order-5">
+                        <h2>
+                            Reception
+                        </h2>
+                        <p>
+                           Learn about how the Minecraft was recieved, in terms of its critiques, sales, awards and the various controversies that have shown up through its lifespan: 2014 EULA changes, Account migration, Java Edition chat reporting, Mob Vote.
+                        </p>
+                        <div class="mt-4">
+                            <button type="button" class="btn btn-success btn-custom btn-lg mb-3" onclick="location.href='reception.html';">Explore</button>
+                        </div>
+    
+                    </div>
+                    <div class="col-12 col-md-6  d-flex justify-content-center align-self-center order-1">
+                        <img src="images/globe.jpg" class="animate__animated animate__slideInLeft animate__delay-4s" alt="Earth Built in Minecraft">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="text-image-container">
+                <div class="row">
+                    <div class="text-image-container-text col-12 col-md-6 align-self-center order-md-1 order-5">
+                        <h2>
+                            Cultural Impact
+                        </h2>
+                        <p>
+                           Learn about the impact Minecraft has had on the world's culture. How Minecraft is being applied in the wider world for architecture and education. Find out about th emany games that have copied or highly resemble Minecraft and learn about Minecon (Minecraft Live).
+                        </p>
+                        <div class="mt-4">
+                            <button type="button" class="btn btn-success btn-custom btn-lg mb-3" onclick="location.href='culturalImpact.html';">Explore</button>
+                        </div>
+    
+                    </div>
+                    <div class="col-12 col-md-6  d-flex justify-content-center align-self-center order-md-5 order-1">
+                        <img src="images/minecraftInSchool.png" class="animate__animated animate__slideInRight animate__delay-5s" alt="Minecraft being played in an educational setting">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="text-center mt-4">
+                <button type="button" class="btn btn-success btn-custom btn-lg mb-3" onclick="location.href='#';">Back To Top</button>
+            </div>
         </div>
         
 

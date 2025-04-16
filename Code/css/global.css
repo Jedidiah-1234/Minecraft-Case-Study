@@ -321,3 +321,8 @@ p{
         text-align: center;
     }
 }
+
+/*Styling for buttons to match colour scheme, to be used with bootstrap class btn-success*/
+.btn-custom{
+    background-color: var(--primary-green);
+}
